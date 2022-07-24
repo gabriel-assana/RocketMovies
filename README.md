@@ -11,3 +11,4 @@ Utilizado tratamento de exceções, prevenindo quebra do back-end.
 Banco de dados Sqlite para desenvolvimento, knex para conexão e migrations. 
 
 - Javascript
+ 

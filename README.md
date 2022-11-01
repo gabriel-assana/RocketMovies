@@ -55,3 +55,31 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 [Git](https://git-scm.com) e [Node](https://nodejs.org/pt-br/).
 Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/).
 
+### _Iniciando a aplicação_
+
+Para iniciar a aplicação, é necessário:
+
+- Baixar ou clonar o repositório em sua maquina.
+- Abrir o diretório aonde ele esta salvo.
+- Abrir o terminal nesse diretório.
+- Executar o seguinte comando:
+  ```bash
+      $ npm install
+  ```
+  para ser instalado a pasta node_modules e se seguinda execute o comando:
+  ```bash
+      $ npm start
+  ```  
+- Se tudo der certo, a seguinte mensagem vai aparecer no terminal/console:
+  ```
+      Server is running on port 3333.
+  ```
+- Com isso, todas as dependências devem ser instaladas, e um servidor local ficará em execução na porta 3333.
+
+- Para utilizar todo dos recursos desta API, vamos utilizar a seguinte URL base:
+
+  `http://localhost:3333`
+
+- E para fazer as requisições usaremos o Insomnia.
+
+

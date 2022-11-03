@@ -47,8 +47,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ✔️ Multe
 
-
-
 <h2>Pré-requisitos</h2>
 
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
@@ -81,6 +79,3 @@ Para iniciar a aplicação, é necessário:
   `http://localhost:3333`
 
 - E para fazer as requisições usaremos o Insomnia.
-
-
-

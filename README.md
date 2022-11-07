@@ -1,7 +1,7 @@
 <h1 align="center">
   <h2 align="center"> RocketMovies API </h2> 
-</h1>
-
+</h1> 
+ 
 <h2 align="center" >Descrição do Projeto</h2> 
 <p align="center">
   Projeto é uma aplicação para guardar, mostrar, editar e deletar filmes em um banco de dados.

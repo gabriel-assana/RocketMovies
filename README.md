@@ -78,4 +78,4 @@ Para iniciar a aplicação, é necessário:
 
   `http://localhost:3333`
 
-- E para fazer as requisições usaremos o Insomnia.
+- E para fazer as requisições usaremos o Insomnia. 

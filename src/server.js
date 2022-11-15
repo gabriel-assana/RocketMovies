@@ -1,30 +1,38 @@
 require("express-async-errors");
+require("dotenv/config");
+const express = require("express");
+const cors = require("cors");
 
-const express = require('express');
-const database = require("./database/sqlite");
-const routes = require('./routes');
-const AppError = require('./utils/AppError');
+const AppError = require("./utils/AppError");
+const routes = require("./routes");
+const uploadConfigs = require("./configs/upload");
 
 const app = express();
+
+app.use(cors());
+
 app.use(express.json());
+
+app.use("/files", express.static(uploadConfigs.UPLOAD_FOLDER));
+
 app.use(routes);
 
-database();
-
 app.use((error, request, response, next) => {
-    if(error instanceof AppError) {
-        return response.status(error.statusCode).json({
-            status: "Error",
-            message: error.message
-        });
-    }
-
-    return response.status(500).json({
-        status: "Error",
-        message: "Internal Server Error",
+  if (error instanceof AppError) {
+    return response.status(error.statusCode).json({
+      status: error.statusCode,
+      message: error.message,
     });
+  }
+
+  console.log(error);
+
+  return response.status(500).json({
+    status: 500,
+    message: "Erro interno, por favor contate o administrador!",
+  });
 });
 
-const PORT = 3333;
+const PORT = process.env.PORT || 3333;
 
-app.listen(PORT, () => console.log( `Server is running on port  ${PORT}`));
+app.listen(PORT, () => console.log(`Server is running on port ${PORT}.`));

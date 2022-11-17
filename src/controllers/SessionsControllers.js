@@ -27,13 +27,7 @@ class SessionsControllers {
       expiresIn,
     });
 
-    const onlyNecessaryInformation = {
-      name: user.name,
-      email: user.email,
-      avatar: user.avatar,
-    };
-
-    return response.json({ user: onlyNecessaryInformation, token });
+    return response.json({ user, token });
   }
 }
 

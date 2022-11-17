@@ -10,23 +10,20 @@ class UsersAvatarController {
 
     const user = await knex("users").where({ id: user_id }).first();
 
+    if (!user) {
+      throw new AppError("Somente usuários autenticados podem mudar o avatar",401);
+    }
+
     if (user.avatar) {
       await diskStorage.deleteFile(user.avatar);
     }
 
     const fileName = await diskStorage.saveFile(avatarFile);
-
     user.avatar = fileName;
 
     await knex("users").where({ id: user_id }).update(user);
 
-    const onlyNecessaryInformation = {
-      name: user.name,
-      email: user.email,
-      avatar: user.avatar,
-    };
-
-    return response.json(onlyNecessaryInformation);
+    return response.json(user);
   }
 }
 

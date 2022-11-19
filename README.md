@@ -16,7 +16,7 @@ Esse projeto é uma aplicação para guardar, mostrar, editar e deletar filmes e
 - [Utilização](#bulb-utilização)
 - [Autor](#nerd_face-autor)
 
-</br>
+</br> 
 
 ## :clapper: Pré-Visualização
 

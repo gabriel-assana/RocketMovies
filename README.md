@@ -30,7 +30,7 @@ Esse projeto é uma aplicação para guardar, mostrar, editar e deletar filmes e
 
 - A primeira versão do projeto **está finalizada**.
 
-- Você pode testar o projeto utilizando o front-end [clicando aqui!](https://rocketmovies2022.netlify.app/), ou então você pode clonar o repositorio e testar localmente utilizando o NodeJS e o Insomnia.
+- Você pode testar o projeto utilizando o front-end [clicando aqui!](https://rocketmovies29.netlify.app/), ou então você pode clonar o repositorio e testar localmente utilizando o NodeJS e o Insomnia.
 
 - Você pode baixar o NodeJS [clicando aqui](https://nodejs.org/pt-br/download/).
 

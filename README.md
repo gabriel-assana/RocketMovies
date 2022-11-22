@@ -6,6 +6,7 @@ Esse projeto é uma aplicação para guardar, mostrar, editar e deletar filmes e
     <img src="./src/assets/images/node.jpg" alt="Capa do projeto">
 </h1>
 
+
 ## :open_book: Sumário
 
 - [Pré-Visualização](#clapper-pré-visualização)
